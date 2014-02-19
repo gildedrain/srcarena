@@ -1,0 +1,72 @@
+/* OCC_GLOBAL.CSS OVERRIDES */
+#aside,aside,.aside{float:none; top:165px;}
+#aside>*,aside>*,.aside>*{max-width:none;}
+#section.hasmenu,section.hasmenu,.section.hasmenu{float:none;width:auto;margin-bottom:1em;}
+.main {background:transparent;border:none;box-shadow:none;}
+#occheaderbg, .headernav, #occlogo {display:none;}
+.logotext {background:url(../images/occlogo.png) no-repeat top left; text-indent:-10000em; height:120px; width:960px;}
+.tagline {width:960px;}
+#section {background:#FFF;}
+/* EKTRON MENU OVERRIDES*/
+.menu{padding:0;margin:0 0 15px 0; position:absolute; top:130px; width:auto;}
+.menu ul{margin:0 0 0 0;list-style:none;padding:0;}
+.menu ul ul{margin-bottom:0;}
+.menu li{display:inline; display:inline-block;margin:0 0 3px 0;padding:0;}
+.menu li a{display:inline-block;width:auto;padding:.25em 6px .25em 6px;margin:0 2px 0 0;text-decoration:none;text-align:center;}
+/* tier 1 */
+.menu .ekflexmenu_submenu_btnlink:hover,.menu .ekflexmenu_link:hover,.menu .ekflexmenu_link_selected,.menu .ekflexmenu_link_selected:hover,.menu .ekflexmenu_button_selected{color:#FFF;background-color:#cc0000;}
+/*HACK! adding a top border to menu li's seems to force IE7 into the box model */
+.ie7 .menu li{border-top:1px solid #cbe9ff;}
+/* default color scheme */
+.menu{color:#FFF;background-color:transparent; box-shadow:none;}
+.menu a{color:#FFF;background-color:#000;text-transform:uppercase; font-size:.95em;}
+.menu ul {background-color:transparent; display:inline-block;}
+.menu li a:hover,.menu .current{color:#FFF;background-color:#cc0000;}
+
+body {background:#000 url(../images/bg_night.png) no-repeat top center;}
+
+h2#menutitle {height:120px; padding:0; margin:0 0 50px 0; border-radius:5% 5% 50% 50%; background-color:#000; background:rgba(0,0,0,.2) url(../images/srcarena.png) no-repeat center center; text-indent:-10000em;}
+.oldie h2#menutitle {background-image:url(../images/srcarena.jpg); background-repeat:no-repeat; background-position:center center;}
+
+.events {padding:0; list-style:none;}
+.events li {margin-bottom:2px;}
+.events a {background:#FFF; color:#222; display:block; padding:.5em;}
+.events strong {display:block; color:#cc0000; text-transform:uppercase; font-weight:400;}
+.events a:hover {background:#cc0000; color:#fff; text-decoration:none;}
+.events a:hover strong {color:#fff;}
+
+.boxoffice {background:#cc0000; background:rgba(204,0,0,.8); color:#fff; padding-top:0; padding-bottom:1em; margin-bottom:10px;}
+.boxoffice h3 {float:left; letter-spacing:-3px; width:180px; font-size:3.25em; text-transform:uppercase; margin:10px 10px 0 10px; padding:0; color:#FFF;}
+.boxoffice span {display:inline-block; margin-right:20px;}
+.boxoffice p {margin:.75em .25em .25em 0;}
+.oldie .boxoffice span {display:block;}
+.oldie .boxoffice h3 {height:150px;}
+.boxoffice a {color:#FFF;}
+.boxoffice strong {font-weight:600; margin-right:10px;}
+
+.bg_banners a {outline:none; color:#FFF; font-weight:200; font-size:2.75em;}
+.bg_banners a:hover {text-decoration:none; box-shadow:none; outline:none;}
+.bg_banners span {background:#000; background:rgba(0,0,0,.65);}
+.bg_banners a:hover span {background-color:#cc0000;}
+
+.sponsors {padding:0; background:#fff; text-align:center; padding:10px 0 10px 0;}
+.sponsors li {display:inline-block; padding:10px 20px 10px 20px; margin:0; border:1px solid #FFF;}
+.ie7 .sponsors li {display:block; float:left;}
+.sponsors li:hover {border-color:#cc0000;}
+	
+h3 {color:#cc0000;}
+
+a[href^="mailto:"] {background:none; padding:0 !important;}
+
+
+@media all and (max-width:960px){
+	h2#menutitle {margin:0 0 80px 0;}
+	.boxoffice h3 {float:none; width:auto;}
+	.boxoffice p {margin:.75em .25em .25em .75em;}
+}
+@media all and (max-width:460px){
+	h2#menutitle {margin:0 0 110px 0;}
+}
+@media all and (max-width:450px){
+	h2#menutitle {margin:0 0 140px 0;}
+}
